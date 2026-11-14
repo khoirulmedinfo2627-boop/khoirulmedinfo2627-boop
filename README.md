@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="hero.svg" width="100%" alt="Gandesblood Tian — Frontend Developer · Biru Laut di Tengah Malam" />
+<img src="hero.svg" width="100%" alt="Khoirul Amri— Frontend Developer · Biru Laut di Tengah Malam" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=48CAE4&background=00000000&center=true&vCenter=true&width=720&lines=Merapikan+tampilan+satu+pixel+demi+satu+pixel;HTML+%C2%B7+CSS+%C2%B7+JavaScript;Rapi%2C+responsif%2C+dan+enak+dipandang;Menyelam+ke+internet+%2C+tapi+pengen+juga+ke+laut+;Ngoding?+desain+ajah+%F0%9F%8C%99" alt="typing" />
 
@@ -25,7 +25,7 @@
 
 ```js
 const gandesblood = {
-  nama: "Gandesblood Tian",
+  nama: "Khoirul Amri",
   peran: "Frontend Developer",
   jamAktif: "20.00 – 22.00",
   lagiDibikin: "tampilan web yang rapi, responsif, dan enak dipandang",
