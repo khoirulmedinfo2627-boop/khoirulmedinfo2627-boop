@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320" role="img" aria-label="Gandesblood Tian — Frontend Developer, Biru Laut di Tengah Malam">
+  <defs>
+    <linearGradient id="langit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#040b16"/>
+      <stop offset="0.45" stop-color="#0a1628"/>
+      <stop offset="0.74" stop-color="#0b4f7a"/>
+      <stop offset="1" stop-color="#0077b6"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#caf0f8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#caf0f8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="bingkai">
+      <rect width="1000" height="320" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .k { animation: kedip 3.4s ease-in-out infinite; }
+    @keyframes kedip { 0%, 100% { opacity: .15; } 50% { opacity: 1; } }
+
+    .g1 { animation: geser 12s linear infinite; }
+    .g2 { animation: geser 8s linear infinite reverse; }
+    .g3 { animation: geser 5s linear infinite; }
+    @keyframes geser { from { transform: translateX(0); } to { transform: translateX(-500px); } }
+
+    .gel { animation: naik 7s ease-in infinite; }
+    @keyframes naik {
+      0%   { transform: translateY(0); opacity: 0; }
+      15%  { opacity: .85; }
+      100% { transform: translateY(-70px); opacity: 0; }
+    }
+
+    .meluncur { animation: lewat 8s ease-in infinite; }
+    @keyframes lewat {
+      0%, 70% { transform: translate(0, 0); opacity: 0; }
+      72%     { opacity: 1; }
+      86%     { transform: translate(170px, 60px); opacity: 0; }
+      100%    { transform: translate(170px, 60px); opacity: 0; }
+    }
+
+    .napas { animation: napas 6s ease-in-out infinite; }
+    @keyframes napas { 0%, 100% { opacity: .6; } 50% { opacity: 1; } }
+
+    .kilau { animation: kilau 3.2s ease-in-out infinite; }
+    @keyframes kilau { 0%, 100% { opacity: .15; } 50% { opacity: .5; } }
+
+    .ikan  { animation: renang 20s linear infinite; }
+    .ikan2 { animation: renang 28s linear infinite; }
+    @keyframes renang { from { transform: translateX(-60px); } to { transform: translateX(1060px); } }
+
+    .goyang { animation: goyang 1.4s ease-in-out infinite alternate; }
+    @keyframes goyang { from { transform: translateY(-3px); } to { transform: translateY(3px); } }
+  </style>
+
+  <g clip-path="url(#bingkai)">
+    <!-- langit malam -->
+    <rect width="1000" height="320" fill="url(#langit)"/>
+
+    <!-- bintang -->
+    <g fill="#caf0f8">
+      <circle class="k" cx="60"  cy="40"  r="1.4" style="animation-delay:0s"/>
+      <circle class="k" cx="120" cy="95"  r="1"   style="animation-delay:-1s"/>
+      <circle class="k" cx="180" cy="28"  r="1.6" style="animation-delay:-2s"/>
+      <circle class="k" cx="230" cy="70"  r="1"   style="animation-delay:-.5s"/>
+      <circle class="k" cx="300" cy="40"  r="1.2" style="animation-delay:-1.5s"/>
+      <circle class="k" cx="410" cy="22"  r="1.4" style="animation-delay:-3s"/>
+      <circle class="k" cx="470" cy="60"  r="1"   style="animation-delay:-.8s"/>
+      <circle class="k" cx="540" cy="30"  r="1.6" style="animation-delay:-2.2s"/>
+      <circle class="k" cx="640" cy="50"  r="1"   style="animation-delay:-2.8s"/>
+      <circle class="k" cx="700" cy="25"  r="1.4" style="animation-delay:-.3s"/>
+      <circle class="k" cx="810" cy="40"  r="1.2" style="animation-delay:-2.4s"/>
+      <circle class="k" cx="940" cy="110" r="1.4" style="animation-delay:-.9s"/>
+      <circle class="k" cx="960" cy="45"  r="1"   style="animation-delay:-1.6s"/>
+      <circle class="k" cx="30"  cy="120" r="1.2" style="animation-delay:-2.1s"/>
+      <circle class="k" cx="90"  cy="160" r="1"   style="animation-delay:-.4s"/>
+      <circle class="k" cx="850" cy="150" r="1"   style="animation-delay:-.6s"/>
+      <circle class="k" cx="920" cy="185" r="1.2" style="animation-delay:-2s"/>
+      <circle class="k" cx="45"  cy="200" r="1"   style="animation-delay:-1.4s"/>
+    </g>
+
+    <!-- bintang jatuh -->
+    <g transform="translate(30,20)">
+      <g class="meluncur">
+        <line x1="0" y1="0" x2="-46" y2="-17" stroke="#caf0f8" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- bulan -->
+    <circle class="napas" cx="880" cy="62" r="90" fill="url(#halo)"/>
+    <circle cx="880" cy="62" r="24" fill="#caf0f8"/>
+    <circle cx="872" cy="56" r="4" fill="#90e0ef" opacity=".5"/>
+    <circle cx="888" cy="70" r="3" fill="#90e0ef" opacity=".5"/>
+    <circle cx="886" cy="52" r="2" fill="#90e0ef" opacity=".5"/>
+
+    <!-- judul -->
+    <g filter="url(#glow)">
+      <text x="500" y="132" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="800" letter-spacing="7" fill="#caf0f8">GANDESBLOOD TIAN</text>
+    </g>
+    <text x="500" y="172" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="20" letter-spacing="2" fill="#90e0ef">Frontend Developer · Biru Laut di Tengah Malam</text>
+    <text x="500" y="204" text-anchor="middle" font-family="'JetBrains Mono','Courier New',monospace" font-size="15" fill="#48cae4">&lt;/&gt;  HTML · CSS · JavaScript</text>
+
+    <!-- ombak belakang -->
+    <path class="g1" fill="#0b4f7a" fill-opacity=".95" d="M0,236 q62.5,-12 125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 V330 H0 Z"/>
+
+    <!-- pantulan bulan di air -->
+    <g fill="#caf0f8">
+      <rect class="kilau" x="850" y="243" width="60" height="2.5" rx="1.25"/>
+      <rect class="kilau" x="860" y="249" width="40" height="2" rx="1" style="animation-delay:-1s"/>
+      <rect class="kilau" x="868" y="254" width="24" height="2" rx="1" style="animation-delay:-2s"/>
+    </g>
+
+    <!-- ombak tengah -->
+    <path class="g2" fill="#0077b6" fill-opacity=".9" d="M0,252 q62.5,-16 125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 V330 H0 Z"/>
+
+    <!-- ombak depan -->
+    <path class="g3" fill="#00b4d8" fill-opacity=".55" d="M0,274 q62.5,-10 125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 t125,0 V330 H0 Z"/>
+
+    <!-- gelembung -->
+    <g fill="none" stroke="#caf0f8" stroke-width="1.5">
+      <circle class="gel" cx="120" cy="300" r="5" style="animation-delay:-1s"/>
+      <circle class="gel" cx="205" cy="305" r="3" style="animation-delay:-3s"/>
+      <circle class="gel" cx="330" cy="298" r="4" style="animation-delay:-5s"/>
+      <circle class="gel" cx="450" cy="306" r="3" style="animation-delay:-2s"/>
+      <circle class="gel" cx="560" cy="300" r="5" style="animation-delay:-4s"/>
+      <circle class="gel" cx="690" cy="304" r="3" style="animation-delay:-6s"/>
+      <circle class="gel" cx="790" cy="298" r="4" style="animation-delay:-.5s"/>
+      <circle class="gel" cx="905" cy="303" r="3" style="animation-delay:-3.5s"/>
+    </g>
+
+    <!-- ikan berenang ke kanan -->
+    <g transform="translate(0,297)">
+      <g class="ikan" style="animation-delay:-6s">
+        <g class="goyang">
+          <ellipse cx="0" cy="0" rx="11" ry="5" fill="#caf0f8" fill-opacity=".6"/>
+          <path d="M-9,0 L-19,-6 L-19,6 Z" fill="#caf0f8" fill-opacity=".6"/>
+          <circle cx="6" cy="-1.5" r="1.2" fill="#0a1628"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- ikan kecil berenang ke kiri -->
+    <g transform="translate(1000,309) scale(-1,1)">
+      <g class="ikan2" style="animation-delay:-10s">
+        <g class="goyang" style="animation-delay:-.7s">
+          <g transform="scale(.75)">
+            <ellipse cx="0" cy="0" rx="11" ry="5" fill="#90e0ef" fill-opacity=".6"/>
+            <path d="M-9,0 L-19,-6 L-19,6 Z" fill="#90e0ef" fill-opacity=".6"/>
+            <circle cx="6" cy="-1.5" r="1.2" fill="#0a1628"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <rect x=".5" y=".5" width="999" height="319" rx="18" fill="none" stroke="#0b4f7a" stroke-opacity=".6"/>
+</svg>
