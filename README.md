@@ -115,12 +115,9 @@ console.log(jamAktif ? "🌙 Gue lagi online." : "☀️ Zzz… jangan diganggu.
 
 <div align="center">
 
-| 🌐 Proyek | 📝 Keterangan | 🛠️ Dibuat dengan |
-| :-------: | :------------ | :---------------: |
-| [**web-dakwah**](https://bovisebastianp-tech.github.io/web-dakwah/) | Konten Islami dengan struktur layout yang bersih dan responsif | `HTML` |
-| [**web-SIPENIL**](https://bovisebastianp-tech.github.io/web-SIPENIL/) | Sistem Informasi Pengelolaan dan Kalkulasi Nilai Mahasiswa | `JavaScript` |
 
-<sub>Proyek berikutnya masih di dasar laut, belum muncul ke permukaan 🌊</sub>
+
+<sub>Belum ada project, belum muncul ke permukaan 🌊</sub>
 
 </div>
 
