@@ -173,8 +173,7 @@ console.log(jamAktif ? "🌙 Gue lagi online." : "☀️ Zzz… jangan diganggu.
 <div align="center">
 
 <a href="https://github.com/khoirul-amri"><img src="https://img.shields.io/badge/GitHub-khoirulamri--tech-0a1628?style=for-the-badge&logo=github&logoColor=48cae4" /></a>
-<a href="https://github.com/khoirulamri?tab=followers"><img src="https://img.shields.io/github/followers/khorulamri-tech?label=Follow&style=for-the-badge&color=0077b6&labelColor=0a1628&logo=github&logoColor=48cae4" /></a>
-
+<a href="https://github.com/khoirulamri?tab=followers"><img
 <br/><br/>
 
 <sub>🌌 Fun fact: zona "tengah malam" di laut itu paling indah untuk di lihat.</sub>
